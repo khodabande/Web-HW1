@@ -1,0 +1,73 @@
+html body {
+	margin: 0;
+	min-height: 100%;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Menu */
+.menu img {
+	vertical-align: middle;
+}
+
+.navbar-fixed, nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+	height: 48px !important;
+	line-height: 48px !important;
+}
+
+.menu .logo-image {
+	width: 28px;
+	height: 28px;
+	margin-left: 20px;
+}
+
+.menu .logo-type {
+	height: 18px;
+	margin-left: 12px;
+}
+
+
+/* Main Container */
+.main {
+	position: absolute;
+	top: 48px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+/* Navbar Column */
+nav.navbar {
+	
+}
+
+.side-nav {
+	width: 256px;
+	top: 48px !important;
+	z-index: 888 !important;
+}
+
+#sidenav-overlay {
+	z-index: 887 !important;
+}
+
+nav.navbar .collapsed {
+	/* hide texts & show icons only */
+}
+
+
+/* Content Column */
+main .padding-adder {
+	width: 300px;
+	float: left;
+	display: block;
+}
+
+main .padding-remaining {
+	float: left;
+}
+
+main {
+	
+}
+
