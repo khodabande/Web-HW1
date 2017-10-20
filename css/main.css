@@ -4,6 +4,11 @@ html body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
 /* Menu */
 .menu img {
 	vertical-align: middle;
@@ -42,12 +47,31 @@ nav.navbar {
 }
 
 .side-nav {
-	width: 256px !important;
+	width: 256px ;
 	top: 48px !important;
 	z-index: 888 !important;
 	height: calc(100%  - 104px - 48px);
 	padding-bottom: 32px;
+	
 }
+
+#side-head {
+	width: 256px;
+	height: 49px;
+	margin: 0;
+	top: 0;
+	/* padding: 10px 20px; */
+	background-color: white;
+	box-shadow: white;
+	transform: translateX(-100%);
+	/* visibility: hidden; */
+}
+
+/* @media only screen and (min-width: 992px) {
+	#side-head {
+	display: none;
+	}
+} */
 
 #side-navbar1 {
 	width: 256px !important;
@@ -65,10 +89,11 @@ nav.navbar {
 }
 
 #side-navbar2 {
-	width: 256px !important;
+	width: 256px ;
 	top: calc(100%  - 44px) !important;
 	z-index: 888 !important;
 }
+
 #sidenav-overlay {
 	z-index: 887 !important;
 }
@@ -92,7 +117,7 @@ nav.navbar .collapsed {
 
 #overview-a {
 	height: 56px;
-	width: 197px;
+	width: 212px;
 	padding: 18px 0px 18px 24px;
 	display: inline-flex;
 }
@@ -109,7 +134,7 @@ nav.navbar .collapsed {
 	width: 36px;
 	height: 36px;
 	padding: 8px 0;
-	margin: 0 4px;
+	margin: 0 1px;
 	/* border-left-style: solid; 
 	border-left-color:  rgb(220, 220, 220);
 	border-left-width: 1px; */
@@ -126,9 +151,12 @@ nav.navbar .collapsed {
 	#overview-btn > a {
 		padding: 0;
 	}
-	/* #side-navbar1 {
+	#side-navbar2 {
 		display: none;
-	} */
+	}
+	#side-navbar1 {
+		transform: translate(-100%);
+	}
 }
 
 .nav-item {
@@ -179,6 +207,7 @@ main .padding-adder {
 	width: 300px;
 	float: left;
 	display: block;
+	
 }
 
 main .padding-remaining {

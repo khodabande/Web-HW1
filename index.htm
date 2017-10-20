@@ -20,7 +20,7 @@
 			<nav>
 				<div class="nav-wrapper">
 					<a href="#" class="logo"><img src="img/logo.png" class="logo-image"/><img src="img/logotype.svg" class="logo-type"/></a>
-					<a href="#" data-activates="side-navbar" class="button-collapse" onclick="show_fix_sidenav()"><i class="material-icons">menu</i></a>
+					<a href="#" data-activates="side-navbar" class="button-collapse" onblur="hide_fix_sidenav();" onclick="show_fix_sidenav()"><i class="material-icons">menu</i></a>
 
 					<ul class="right hide-on-med-and-down">
 						<li><a href="test.html"><i class="material-icons left">remove_red_eye</i> View only</a></li>
@@ -34,8 +34,15 @@
 	
 		<!-- Side Navbar -->
 		<div class="nav-wrapper">	
-			<ul class="side-nav fixed" id="side-navbar" >
-				<li class="nav-item " id="overview">
+				<div class="left" id="side-head" style="position: fixed; margin-top: 0px;z-index: 1000;">
+						<a href="asdad.xa"  style="display: block;height: 49px; width: 256px;">
+							<img src="img/logo.png" style="width: 28px;height: 28px; margin: 10px 0 0 20px;" class="logo-image">
+							<img src="img/logo-black.svg" style="width: 82px;height: 18px;margin-left: 12px;margin-top: -20px;" class="logo-type">
+						</a>
+				</div>
+			<div class="side-nav fixed" id="side-navbar">						
+				<ul  style="margin: 0">
+					<li class="nav-item " id="overview">
 							<a id="overview-a" href="/project/fir-demo-project/analytics"> 
 								<div class="c5e-nav-item-lockup" id="overview-div" style="height: 36px"> 
 										<svg viewBox="0 0 20 20" style="margin-top: 10px">
@@ -69,8 +76,9 @@
 					</a>
 				</li>	
 
-				<div class="c5e-nav-heading ">DEVELOP</div>
-				
+				<div class="c5e-nav-heading" id="DEVELOP">DEVELOP</div>
+				<li class = "divider" id="DEVELOP-divider" style="display: none"></li>
+
 				<li class="nav-item">
 						<a class="c5e-nav-item " href="/project/fir-demo-project/analytics"> 
 							<div class="c5e-nav-item-lockup"> 
@@ -152,7 +160,8 @@
 						</a>
 				</li>
 
-				<div class="c5e-nav-heading ">GROW</div>
+				<div class="c5e-nav-heading " id="DEVELOP1">GROW</div>
+				<li class = "divider" id="DEVELOP-divider1" style="display: none"></li>
 				
 				<li class="nav-item">
 						<a class="c5e-nav-item " href="/project/fir-demo-project/analytics"> 
@@ -185,7 +194,8 @@
 						</a>
 				</li>
 
-				<div class="c5e-nav-heading ">EARN</div>
+				<div class="c5e-nav-heading " id="DEVELOP2">EARN</div>
+				<li class = "divider" id="DEVELOP-divider2" style="display: none"></li>
 				
 				<li class="nav-item">
 						<a class="c5e-nav-item " href="/project/fir-demo-project/analytics"> 
@@ -198,6 +208,7 @@
 						</a>
 				</li>
 			</ul>
+			</div>
 			<div class="side-nav fixed" id="side-navbar1" style="line-height: 16px;" >
 					<div layout="column" flex="" class="layout-column flex" style="display: inline"> 
 						<div style="font-size: 14px;color: rgba(0,0,0,0.54);display: inline">
@@ -216,8 +227,8 @@
 						</div> 
 					</div>
 			</div>
-			<button class="right side-nav fixed" id="side-navbar2" style="line-height: 16px;padding: 10px 16px;background-color: white;border: none;height: 44px;">
-					<svg class="right" style="width:24px;height:24px" viewBox="0 0 24 24">
+			<button class="right side-nav fixed" id="side-navbar2" style="line-height: 16px;padding: 10px 16px;background-color: white;border: none;height: 44px;" onclick="toggle_menu1()">
+					<svg id="side-navbar2-svg" class="right" style="width:24px;height:24px" viewBox="0 0 24 24">
 						<path fill="#000000" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
 					</svg>
 			</button>
@@ -226,10 +237,10 @@
 	</header>
 	
 	<!-- Content column -->
-	<main>
-		<div class="padding-adder hide-on-med-and-down">&nbsp;</div>
+	<main id="main">
+		<div id="padding-adder" class="padding-adder hide-on-med-and-down">&nbsp;</div>
 		<div class="padding-remaining">
-			salaaam
+			salaaamasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd
 		</div>
 	</main>
 	
