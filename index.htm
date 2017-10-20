@@ -20,7 +20,7 @@
 			<nav>
 				<div class="nav-wrapper">
 					<a href="#" class="logo"><img src="img/logo.png" class="logo-image"/><img src="img/logotype.svg" class="logo-type"/></a>
-					<a href="#" data-activates="side-navbar" class="button-collapse"><i class="material-icons">menu</i></a>
+					<a href="#" data-activates="side-navbar" class="button-collapse" onclick="show_fix_sidenav()"><i class="material-icons">menu</i></a>
 
 					<ul class="right hide-on-med-and-down">
 						<li><a href="test.html"><i class="material-icons left">remove_red_eye</i> View only</a></li>
@@ -197,11 +197,30 @@
 							</div>  
 						</a>
 				</li>
-
-				<li class="nav-item" style="position: fixed">
-						heyy
-				</li>
 			</ul>
+			<div class="side-nav fixed" id="side-navbar1" style="line-height: 16px;" >
+					<div layout="column" flex="" class="layout-column flex" style="display: inline"> 
+						<div style="font-size: 14px;color: rgba(0,0,0,0.54);display: inline">
+							Spark
+						</div> 
+						<a href="test.html" class="right " style="margin-right: -12px;padding: 8px 12px; height: 32px;width: 83px;font-size: 13px;background-color:white;border: none;color: rgb(3,155,229);font-style:oblique">
+							<strong>
+								UPGRADE
+							</strong>
+						</a>
+						<div style="font-size:12px;color: rgba(0,0,0,0.54);display: inline">
+							<span><br>
+								Free
+							</span>
+							 $0/month
+						</div> 
+					</div>
+			</div>
+			<button class="right side-nav fixed" id="side-navbar2" style="line-height: 16px;padding: 10px 16px;background-color: white;border: none;height: 44px;">
+					<svg class="right" style="width:24px;height:24px" viewBox="0 0 24 24">
+						<path fill="#000000" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" />
+					</svg>
+			</button>
 		</div>
 	
 	</header>

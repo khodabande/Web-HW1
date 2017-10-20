@@ -45,9 +45,30 @@ nav.navbar {
 	width: 256px !important;
 	top: 48px !important;
 	z-index: 888 !important;
-	height: calc(100% - 32px - 104px)
+	height: calc(100%  - 104px - 48px);
+	padding-bottom: 32px;
 }
 
+#side-navbar1 {
+	width: 256px !important;
+	top: calc(100%  - 104px) !important;
+	z-index: 888 !important;
+	height: 60px;
+	position: fixed;
+	padding: 12px 24px;
+	border-bottom: 1px;
+	border-top: 1px;
+	border-bottom-style: solid;
+	border-top-style: solid;
+	border-color: rgb(220, 220, 220); 
+	
+}
+
+#side-navbar2 {
+	width: 256px !important;
+	top: calc(100%  - 44px) !important;
+	z-index: 888 !important;
+}
 #sidenav-overlay {
 	z-index: 887 !important;
 }
@@ -94,11 +115,22 @@ nav.navbar .collapsed {
 	border-left-width: 1px; */
 }
 
+
 #overview-div {
-		border-right-style: solid; 
+	border-right-style: solid; 
 	border-right-color:  rgb(220, 220, 220);
 	border-right-width: 1px;
 }
+
+@media only screen and (max-width: 992px) {
+	#overview-btn > a {
+		padding: 0;
+	}
+	/* #side-navbar1 {
+		display: none;
+	} */
+}
+
 .nav-item {
 	width: 241px;
 	height: 36px;
