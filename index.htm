@@ -20,7 +20,7 @@
 			<nav>
 				<div class="nav-wrapper">
 					<a href="#" class="logo"><img src="img/logo.png" class="logo-image"/><img src="img/logotype.svg" class="logo-type"/></a>
-					<a href="#" data-activates="side-navbar" class="button-collapse" onblur="hide_fix_sidenav();" onclick="show_fix_sidenav()"><i class="material-icons">menu</i></a>
+					<a href="#" data-activates="side-navbar" class="button-collapse"  onclick="show_fix_sidenav(event)"><i class="material-icons">menu</i></a>
 
 					<ul class="right hide-on-med-and-down">
 						<li><a href="test.html"><i class="material-icons left">remove_red_eye</i> View only</a></li>
@@ -43,7 +43,7 @@
 			<div class="side-nav fixed" id="side-navbar">						
 				<ul  style="margin: 0">
 					<li class="nav-item " id="overview">
-							<a id="overview-a" href="/project/fir-demo-project/analytics"> 
+							<a  id="overview-a" href="/project/fir-demo-project/analytics"> 
 								<div class="c5e-nav-item-lockup" id="overview-div" style="height: 36px"> 
 										<svg viewBox="0 0 20 20" style="margin-top: 10px">
 												<path fill="#039be5" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
@@ -237,7 +237,7 @@
 	</header>
 	
 	<!-- Content column -->
-	<main id="main">
+	<main id="main" onclick="hide_fix_sidenav()">
 		<div id="padding-adder" class="padding-adder hide-on-med-and-down">&nbsp;</div>
 		<div class="padding-remaining">
 			salaaamasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd

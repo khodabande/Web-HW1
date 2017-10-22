@@ -2,8 +2,9 @@ $( document ).ready(function(){
 	$(".button-collapse").sideNav();
 });
 
+
 function show_fix_sidenav() {
-	$("#side-navbar1").toggle();
+	// $("#side-navbar1").toggle();
 	// document.getElementById("side-navbar1").style.transform = "translateX(0%)";
 	// $("#side-navbar1").animate({transform : "translateX(0%)"});
 	// document.getElementById("side-navbar1").style.top = "calc(100%  - 60px) !important;";
@@ -14,8 +15,7 @@ function side_navbar1() {
 	
 }
 function hide_fix_sidenav(){
-	
-	$("#side-navbar1").toggle();	
+	// $("#side-navbar1").toggle();	
 	// 	document.getElementById("side-head").style.transform = "translateX(-100%)";	
 // 	document.getElementById("side-navbar1").style.transform = "translateX(-100%)";
 	
