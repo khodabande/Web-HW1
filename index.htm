@@ -5,8 +5,8 @@
 	<title></title>
 	<link rel="stylesheet" href="css/materialize.css">
 	<link rel="stylesheet" href="css/material-icons.css">
-	<link rel="stylesheet" href="css/main.css">	
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 	<script src="js/jquery.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/main.js"></script>
@@ -19,14 +19,18 @@
 		<div class="navbar-fixed menu">
 			<nav>
 				<div class="nav-wrapper">
-					<a href="#" class="logo"><img src="img/logo.png" class="logo-image"/><img src="img/logotype.svg" class="logo-type"/></a>
-					<a href="#" data-activates="side-navbar" class="button-collapse"  onclick="show_fix_sidenav(event)"><i class="material-icons">menu</i></a>
+					<a href="#" class="logo"><img src="img/logo.png" class="logo-image hide-on-small-only"/><img src="img/logotype.svg" class="logo-type"/></a>
+					<div href="#" data-activates="side-navbar" class="button-collapse btn-floating btn-flat waves-effect waves-light waves-circle transparent hide-on-large-only"><i class="material-icons">menu</i></div>
 
-					<ul class="right hide-on-med-and-down">
-						<li><a href="test.html"><i class="material-icons left">remove_red_eye</i> View only</a></li>
-						<li><a href="test.html">Go to docs</a></li>
-						<li><a href="test.html"><i class="material-icons">more_vert</i></a></li>
-						<li><a href="test.html">Profile Image</a></li>
+					<ul class="right hide-on-small-only">
+						<li><div class="viewonly" href="test.html"><div class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="This is a demo project."><i class="material-icons left">remove_red_eye</i> View only</div></div></li>
+						<li><a class="link" href="test.html">Go to docs</a></li>
+						<li><div data-position="bottom" data-delay="50" data-tooltip="User settings" data-activates="more-content" class="tooltipped btn-floating btn-flat transparent waves-effect waves-light waves-circle dropdown button"><i class="material-icons">more_vert</i></div></li>
+						<li><div class="profile-wrapper"><div class="btn-floating btn-flat transparent waves-effect waves-light waves-circle profile button"><img class="profile-photo" src="img/profile.jpg"></div></div></li>
+					</ul>
+					
+					<ul id="more-content" class="dropdown-content">
+						<li><a href="#">Alert subscriptions</a></li>
 					</ul>
 				</div>
 			</nav>
