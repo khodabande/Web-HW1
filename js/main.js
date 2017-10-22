@@ -2,7 +2,9 @@ $( document ).ready(function(){
 	$(".button-collapse").sideNav();
 	$(".dropdown.button").dropdown();
 	$('.tooltipped').tooltip({delay: 50});
+	$('.dropdown-button').dropdown({});
 });
+
 
 
 function show_fix_sidenav() {
@@ -73,4 +75,8 @@ function toggle_menu2() {
 	for (var i = 0; i < all.length; i++) {
 	  all[i].style.display = 'inline';
 	}
+}
+
+function myFunction() {
+    alert("The ontoggle event occured");
 }

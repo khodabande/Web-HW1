@@ -20,7 +20,7 @@
 			<nav>
 				<div class="nav-wrapper">
 					<a href="#" class="logo"><img src="img/logo.png" class="logo-image hide-on-small-only"/><img src="img/logotype.svg" class="logo-type"/></a>
-					<div href="#" data-activates="side-navbar" class="button-collapse btn-floating btn-flat waves-effect waves-light waves-circle transparent hide-on-large-only"><i class="material-icons">menu</i></div>
+					<div href="#" data-activates="side-navbar" class="button-collapse btn-floating btn-flat waves-effect waves-light waves-circle transparent hide-on-large-only" ><i class="material-icons">menu</i></div>
 
 					<ul class="right hide-on-small-only">
 						<li><div class="viewonly" href="test.html"><div class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="This is a demo project."><i class="material-icons left">remove_red_eye</i> View only</div></div></li>
@@ -38,14 +38,16 @@
 	
 		<!-- Side Navbar -->
 		<div class="nav-wrapper">	
-				<div class="left" id="side-head" style="position: fixed; margin-top: 0px;z-index: 1000;">
-						<a href="asdad.xa"  style="display: block;height: 49px; width: 256px;">
-							<img src="img/logo.png" style="width: 28px;height: 28px; margin: 10px 0 0 20px;" class="logo-image">
-							<img src="img/logo-black.svg" style="width: 82px;height: 18px;margin-left: 12px;margin-top: -20px;" class="logo-type">
-						</a>
-				</div>
-			<div class="side-nav fixed" id="side-navbar">						
-				<ul  style="margin: 0">
+
+			<div class="side-nav fixed" id="side-navbar"  >
+				<div class="nav-item " id="side-logo">
+							<a class="c5e-nav-item " href="#" style="padding-left: 0;height: 48px">
+								<img src="img/logo.png" style="width: 48px;height: 28px; padding-left: 20px;margin-top: 10px;">
+								<img src="img/logo-black.svg" style="width: 82px;height: 18px; margin-left: 12px;">
+							</a>
+				</div>						
+				<div style="overflow-y: scroll;">
+					<ul  style="margin: 0">
 					<li class="nav-item " id="overview">
 							<a  id="overview-a" href="/project/fir-demo-project/analytics"> 
 								<div class="c5e-nav-item-lockup" id="overview-div" style="height: 36px"> 
@@ -55,17 +57,21 @@
 									 <span class="c5e-entry-displayname" id="overview-text">Overview</span> 
 								</div>  
 							</a>
-							<span class="fixed-action-btn horizontal click-to-toggle" id="overview-btn">	
+							<span class="dropdown-button" id="overview-btn" data-activates='dropdown1'>	
 									<svg  viewBox="0 0 22 22" style="height: 18px;width: 24; padding-left: 3px">
 											<path fill="#737373" d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
 										</svg>
-										<ul>
-												<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-												<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-												<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-												<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-											  </ul>
 							</span>
+							<ul id='dropdown1' class='dropdown-content' style="position: fixed;z-index: 9999;line-height: 24px">
+									<li><a href="#!">Project settings</a></li>
+									<li class="divider"></li>
+									<li style="height:28px !important;margin-left: 16px">
+										<lable style="font-size: 13px;margin-bottom: 16px; color: rgba(0,0,0,0.54)">Managed in Google Cloud Console</lable>
+										<img src="img/cloud_24dp.png" style="height: 24px;width: 24px;margin-left: 8px;">
+									</li>
+									<li><a href="#!">Users and permissions</a></li>
+									
+								  </ul>
 							
 				</li>		
 
@@ -210,10 +216,11 @@
 								 <span class="c5e-entry-displayname">AdMob</span> 
 							</div>  
 						</a>
-				</li>
-			</ul>
+					</li>
+				</ul>
+				</div>
 			</div>
-			<div class=" fixed" id="side-navbar1" style="line-height: 16px;" >
+			<div class="side-nav fixed" id="side-navbar1" style="line-height: 16px;" >
 					<div layout="column" flex="" class="layout-column flex" style="display: inline"> 
 						<div style="font-size: 14px;color: rgba(0,0,0,0.54);display: inline">
 							Spark
@@ -241,7 +248,7 @@
 	</header>
 	
 	<!-- Content column -->
-	<main id="main" onclick="hide_fix_sidenav()">
+	<main id="main">
 		<div id="padding-adder" class="padding-adder hide-on-med-and-down">&nbsp;</div>
 		<div class="padding-remaining">
 			salaaamasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd<br>asdasdasd
