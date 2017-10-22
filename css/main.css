@@ -40,6 +40,25 @@ html body {
 	line-height: 48px;
 }
 
+.menu nav .button-collapse {
+	height: 35px;
+	line-height: 48px;
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 0;
+}
+
+.menu nav .button-collapse i {
+	height: 35px;
+	line-height: 35px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.menu nav .button-collapse:hover i {
+	color: white;
+	transition: color 0.15s ease;
+}
+
 .menu .logo-image {
 	width: 28px;
 	height: 28px;
@@ -90,6 +109,32 @@ html body {
 	margin-right: 6px;
 	line-height: 24px;
 	height: 24px;
+}
+
+.menu ul.dropdown-content {
+	min-width: 150px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	z-index: 100;
+}
+
+.menu .dropdown-content li:not(:empty) {
+	padding: 8px 0;
+}
+
+.menu .dropdown-content li:hover {
+	background-color: white;
+	cursor: default;
+}
+
+.menu .dropdown-content li a {
+	padding: 6px 16px;
+	font-size: 14px;
+	letter-spacing: 0;
+	font-weight: 400;
+	min-height: 32px;
+	line-height: 20px;
+	color: black;
 }
 
 
