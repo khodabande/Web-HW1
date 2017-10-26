@@ -1,0 +1,109 @@
+.card{
+	margin : 0;
+}
+.card .card-image {
+	min-width : 296px;
+	min-height : 128px;
+}
+.card .card-content{
+	padding : 16px !important;
+	height : 124px;
+	margin : 0 !important;
+}
+.card .card-content p.card-title{
+	font-size : 20px !important;
+	color : rgba(0,0,0,0.87) !important;
+	font-weight: 500 !important;
+	margin-bottom : 8px !important;
+	line-height : 24px;
+}
+.card .card-content p{
+		font-size : 13px !important;
+		color : rgba(0,0,0,0.54) !important;
+		line-height: 20px;
+		padding : 0;
+}
+.card .card-action {
+	padding : 4px 4px 4px 16px;
+	border : none;
+	height : 44px;
+	width : 100%;
+}
+.card .card-action .left-link {
+	color : #039be5 !important; 
+	font-size : 14px !important;
+	line-height : 20px !important;
+	padding : 8px 0 !important;
+	text-decoration : underline;
+	text-transform : none !important;
+	margin : 0 !important;
+	text-align : center !important;
+	position : absolute !important;
+}
+.card .card-action .right-link {
+	float : right;
+	color : #039be5 !important; 
+	font-size : 14px;
+	padding : 0 16px;
+	margin : 0 0 0 8px !important;
+	font-weight : 500;
+	display: inline-block;
+    position: relative;
+	min-height: 36px;
+    min-width: 88px;
+	line-height : 36px;
+}
+.card .card-action .right-link:hover {
+	background-color : rgba(3,155,229,0.122);
+}
+.row .col.s5.m3{
+	width : 296px !important;
+	margin: 0 12px 24px 12px !important;
+	padding : 0;
+}
+.row{
+	margin-left : 270px;
+}
+
+
+@media only screen and (max-width:992px){
+        /* styles for browsers less than 992px; */
+/*	.card .card-image {
+			width : 95% !important;
+	} */
+	.row .col.s5.m3{
+	/*width : 96% !important;*/
+	margin: 0 8px 16px 8px !important;
+	padding : 0;
+	}	
+	.row {
+    margin-left: 20px !important;
+    }
+}	
+
+@media only screen and (max-width:663px){
+        /* styles for browsers less than 663px; */
+/*	.card .card-image {
+			width : 95% !important;
+	} */
+	.row .col.s5.m3{
+	width : 96% !important;*/
+	margin: 0 8px 16px 8px !important;
+	padding : 0;
+	}	
+}
+ 
+.row #out-of-cards p{
+	color : rgba(0,0,0,0.54);
+	padding-left : 10px;
+}
+ /*@media only screen and (max-width:210px){
+	.row .col.s5.m3{
+	width : 96% !important;
+	margin: 0 8px 16px 8px !important;
+	padding : 0;
+	overflow : scroll !important;
+	}
+ }*/
+ 
+ 

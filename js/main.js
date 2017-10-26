@@ -44,7 +44,7 @@ function toggle_menu1() {
 	document.getElementById("DEVELOP-divider2").style.display = "block";
 	document.getElementById("DEVELOP2").style.display = "none";
 	document.getElementById("padding-adder").style.width = "112px";
-	
+	$('.row').css('marginLeft', '100px');
 	var all = document.getElementsByClassName('c5e-entry-displayname');
 	for (var i = 0; i < all.length; i++) {
 	  all[i].style.display = 'none';
@@ -70,7 +70,7 @@ function toggle_menu2() {
 	document.getElementById("DEVELOP-divider1").style.display = "none";
 	document.getElementById("DEVELOP1").style.display = "block";
 	document.getElementById("padding-adder").style.width = "300px";
-	
+	$('.row').css('marginLeft', '270px');
 	var all = document.getElementsByClassName('c5e-entry-displayname');
 	for (var i = 0; i < all.length; i++) {
 	  all[i].style.display = 'inline';
