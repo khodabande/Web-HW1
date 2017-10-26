@@ -4,6 +4,10 @@ html body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+header {
+	height: 48px;
+}
+
 /* Menu */
 .menu nav {
 	background-color: #0288D1;
